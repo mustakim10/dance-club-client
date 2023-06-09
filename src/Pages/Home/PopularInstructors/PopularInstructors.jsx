@@ -27,17 +27,17 @@ const PopularInstructors = () => {
             >
                 <SwiperSlide>
                     <img className="w-full" src={slide1} alt="" />
-                    <h3 className="text-4xl uppercase text-center -mt-20 text-white">Remo</h3>
+                    <h3 className="text-4xl uppercase text-center -mt-20 text-white">John Smith</h3>
                     <p className="text-white text-center">Students: 66</p>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={slide2} alt="" />
-                    <h3 className="text-4xl uppercase text-center -mt-20 text-white">Vemmo</h3>
+                    <h3 className="text-4xl uppercase text-center -mt-20 text-white">Emily Johnson</h3>
                     <p className="text-white text-center">Students: 76</p>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={slide3} alt="" />
-                    <h3 className="text-4xl uppercase text-center -mt-20 text-white">Jemmo</h3>
+                    <h3 className="text-4xl uppercase text-center -mt-20 text-white">Sarah Thompson</h3>
                     <p className="text-white text-center">Students: 57</p>
                 </SwiperSlide>
                 <SwiperSlide>

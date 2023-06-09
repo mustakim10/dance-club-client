@@ -14,7 +14,7 @@ const Instructors = () => {
             <div className="card card-compact w-96 bg-base-100 shadow-xl">
                 <figure><img src={ins1} /></figure>
                 <div className="card-body">
-                    <h2 className="card-title">Name: Remo</h2>
+                    <h2 className="card-title">Name: John Smith</h2>
                     <p>Email: remo@desu.com</p>
 
                 </div>
@@ -22,7 +22,7 @@ const Instructors = () => {
             <div className="card card-compact w-96 bg-base-100 shadow-xl">
                 <figure><img src={ins2} /></figure>
                 <div className="card-body">
-                    <h2 className="card-title">Name: Remo</h2>
+                    <h2 className="card-title">Name: Emily Johnson</h2>
                     <p>Email: remo@desu.com</p>
 
                 </div>
@@ -30,7 +30,7 @@ const Instructors = () => {
             <div className="card card-compact w-96 bg-base-100 shadow-xl">
                 <figure><img src={ins3} /></figure>
                 <div className="card-body">
-                    <h2 className="card-title">Name: Remo</h2>
+                    <h2 className="card-title">Name: Sarah Thompson</h2>
                     <p>Email: remo@desu.com</p>
 
                 </div>
@@ -38,7 +38,7 @@ const Instructors = () => {
             <div className="card card-compact w-96 bg-base-100 shadow-xl">
                 <figure><img src={ins4} /></figure>
                 <div className="card-body">
-                    <h2 className="card-title">Name: Remo</h2>
+                    <h2 className="card-title">Name: Sarah Thompson</h2>
                     <p>Email: remo@desu.com</p>
 
                 </div>
@@ -46,7 +46,7 @@ const Instructors = () => {
             <div className="card card-compact w-96 bg-base-100 shadow-xl">
                 <figure><img src={ins5} /></figure>
                 <div className="card-body">
-                    <h2 className="card-title">Name: Remo</h2>
+                    <h2 className="card-title">Name: Sarah Thompson</h2>
                     <p>Email: remo@desu.com</p>
 
                 </div>
@@ -54,7 +54,7 @@ const Instructors = () => {
             <div className="card card-compact w-96 bg-base-100 shadow-xl">
                 <figure><img src={ins6} /></figure>
                 <div className="card-body">
-                    <h2 className="card-title">Name: Remo</h2>
+                    <h2 className="card-title">Name: Sarah Thompson</h2>
                     <p>Email: remo@desu.com</p>
 
                 </div>
@@ -70,7 +70,7 @@ const Instructors = () => {
             <div className="card card-compact w-96 bg-base-100 shadow-xl">
                 <figure><img src={ins8} /></figure>
                 <div className="card-body">
-                    <h2 className="card-title">Name: Remo</h2>
+                    <h2 className="card-title">Name: Sarah Thompson</h2>
                     <p>Email: remo@desu.com</p>
 
                 </div>
@@ -78,7 +78,7 @@ const Instructors = () => {
             <div className="card card-compact w-96 bg-base-100 shadow-xl">
                 <figure><img src={ins9} /></figure>
                 <div className="card-body">
-                    <h2 className="card-title">Name: Remo</h2>
+                    <h2 className="card-title">Name: Sarah Thompson</h2>
                     <p>Email: remo@desu.com</p>
 
                 </div>

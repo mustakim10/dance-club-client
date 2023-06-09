@@ -46,7 +46,7 @@ const Navbar = () => {
           </ul>
         </div>
         <Link to="/" className="btn btn-ghost normal-case text-xl">
-          <img className="w-1/2" src={logo} alt="" />
+          <img className="w-2/5" src={logo} alt="" />
 
         </Link>
         <h1 className="text-3xl font-bold text-orange-500">Dance Club</h1>
