@@ -1,9 +1,11 @@
+import logo from '../../../../public/logo.jpg'
+
 
 const Footer = () => {
     return (
         <footer className="footer p-10 bg-base-200 text-base-content">
   <div>
-    {/* <img className='w-1/2' src={logo} alt="" /> */}
+    <img className='w-1/2' src={logo} alt="" />
     <p>Dance Club<br/>Providing reliable tech since 2010</p>
   </div> 
   <div>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-// import logo from '../../../assets/logo2.png'
+import logo from '../../../../public/logo.jpg'
 // import { FaUserCircle } from 'react-icons/fa';
 // import { useContext } from "react";
 // import { AuthContext } from "../../../Providers/AuthProvider";
@@ -45,7 +45,7 @@ const Navbar = () => {
           </ul>
         </div>
         <Link to="/" className="btn btn-ghost normal-case text-xl">
-          {/* <img className="w-1/2" src={logo} alt="" /> */}
+          <img className="w-1/2" src={logo} alt="" />
 
         </Link>
         <h1 className="text-3xl font-bold text-orange-500">Dance Club</h1>
