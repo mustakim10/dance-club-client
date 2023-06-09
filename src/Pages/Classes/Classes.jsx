@@ -17,7 +17,7 @@ const Classes = () => {
             <div className='md:grid md:grid-cols-3 my-32 gap-20'>
             {
                 classes.map(cls => <SingleClass
-                    key={cls.available_seats}
+                    key={cls._id}
                     cls={cls}
                     ></SingleClass>)
              }
