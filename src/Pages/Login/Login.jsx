@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import login from '../../../public/xtra/login.jpg'
 import { AuthContext } from '../../providers/AuthProvider';
+import { Link } from 'react-router-dom';
 
 
 
@@ -43,7 +44,7 @@ const Login = () => {
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="text" name='password' placeholder="password" className="input input-bordered" />
+                                <input type="password" name='password' placeholder="password" className="input input-bordered" />
 
                             </div>
                             <div className="form-control mt-6">
@@ -52,6 +53,7 @@ const Login = () => {
                             </div>
                         </div>
                         </form>
+                        <p className='m-8'><small>New here ! <Link to="/signup">Create an account</Link></small></p>
                     </div>
                 </div>
             </div>
