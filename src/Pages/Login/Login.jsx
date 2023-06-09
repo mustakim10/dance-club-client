@@ -2,6 +2,8 @@ import { useContext } from 'react';
 import login from '../../../public/xtra/login.jpg'
 import { AuthContext } from '../../providers/AuthProvider';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
+import Swal from 'sweetalert2'
 
 
 
@@ -18,11 +20,25 @@ const Login = () => {
         .then(result => {
             const user = result.user;
             console.log(user);
+            Swal.fire({
+                title: 'User Login successfully',
+                showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                  popup: 'animate__animated animate__fadeOutUp'
+                }
+              })
         })
     }
 
     return (
         <div className='my-12'>
+            <Helmet>
+                <title>
+                    Dance Club | login
+                </title>
+            </Helmet>
 
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row-reverse">

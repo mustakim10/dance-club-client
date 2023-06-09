@@ -1,14 +1,24 @@
 import { Link } from "react-router-dom";
 import login from '../../../public/xtra/login.jpg'
 import { useForm } from "react-hook-form";
+import { Helmet } from "react-helmet-async";
+import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProvider";
 
 
 const SignUp = () => {
 
     const { register, handleSubmit,  formState: { errors } } = useForm();
 
+    const {createUser} = useContext(AuthContext);
+
     const onSubmit = data => {
-        console.log(data)
+        console.log(data);
+        createUser(data.email, data.password)
+        .then(result => {
+            const loggedUser = result.user;
+            console.log(loggedUser);
+        })
     };
 
     
@@ -16,6 +26,11 @@ const SignUp = () => {
     
     return (
         <div className='my-12'>
+            <Helmet>
+                <title>
+                    Dance Club | signUp
+                </title>
+            </Helmet>
 
         <div className="hero min-h-screen bg-base-200">
             <div className="hero-content flex-col lg:flex-row-reverse">
@@ -52,8 +67,16 @@ const SignUp = () => {
                             <label className="label">
                                 <span className="label-text">Password</span>
                             </label>
-                            <input type="password" {...register("password",{ required: true,minLength: 6 , maxLength: 20 })} name='password' placeholder="password" className="input input-bordered" />
+                            <input type="password" {...register("password",{ 
+                                required: true,
+                                minLength: 6 ,
+                                 maxLength: 20,
+                                 pattern: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/
+                                  })} name='password' placeholder="password" className="input input-bordered" />
                             {errors.password?.type === 'required' && <p className="text-red-600">Password is required</p>}
+                            {errors.password?.type === 'minLength' && <p className="text-red-600">Password must be 6 characters</p>}
+                            {errors.password?.type === 'maxLength' && <p className="text-red-600">Password must be less than 20 characters</p>}
+                            {errors.password?.type === 'pattern' && <p className="text-red-600">Password must be have one upper case , one lower case, one number and one special character</p>}
 
 
                         </div>

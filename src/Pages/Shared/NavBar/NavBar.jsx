@@ -1,37 +1,36 @@
 import { Link } from "react-router-dom";
 import logo from '../../../../public/logo.jpg'
-// import { FaUserCircle } from 'react-icons/fa';
-// import { useContext } from "react";
-// import { AuthContext } from "../../../Providers/AuthProvider";
+import { FaUserCircle } from 'react-icons/fa';
+import { useContext } from "react";
+import { AuthContext } from "../../../providers/AuthProvider";
 
 
 const Navbar = () => {
 
- // const { user, logOut } = useContext(AuthContext);
+ const { user, logOut } = useContext(AuthContext);
 
-//   const handleLogOut = () => {
-//     logOut()
-//       .then(() => { })
-//       .catch(error => console.log(error))
-//   }
+  const handleLogOut = () => {
+    logOut()
+      .then(() => { })
+      .catch(error => console.log(error))
+  }
 
 
 
   const navItems = <>
     <li><Link to='/'>Home</Link></li>
-    
-    {/* {
+    <li><Link to='/instructors'>Instructors</Link></li>
+    <li><Link to='/classes'>Classes</Link></li>
+    {
       user?.email ? <>
        
-    <li><Link to="/myToy">My Toys</Link></li>
+    <li><Link to="">My Toys</Link></li>
     
        <li><button onClick={handleLogOut}>LogOut</button></li>
       </> 
       : <li><Link to="/login">Login</Link> </li>
-    } */}
-    <li><Link to='/instructors'>Instructors</Link></li>
-    <li><Link to='/classes'>Classes</Link></li>
-    <li><Link to="/login">Login</Link> </li>
+    }
+    
   </>
 
   return (
@@ -57,9 +56,9 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        {/* {user &&
+        {user &&
           <FaUserCircle className='me-2' style={{ fontSize: '2rem' }}></FaUserCircle>
-        } */}
+        }
        
       </div>
     </div>
