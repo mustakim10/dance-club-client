@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+
 import SingleClass from "../SingleClass/SingleClass";
 import { Helmet} from 'react-helmet-async';
 import useClasses from "../../Hooks/useClasses";
