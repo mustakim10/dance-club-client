@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async'
 import ins1 from '../../../public/instructor/1.jpg'
 import ins2 from '../../../public/instructor/2.jpg'
 import ins3 from '../../../public/instructor/3.jpg'
@@ -11,6 +12,11 @@ import ins9 from '../../../public/instructor/9.jpg'
 const Instructors = () => {
     return (
         <div className='md:grid md:grid-cols-3 my-32 gap-20'>
+            <Helmet>
+                <title>
+                    Dance Club | Instructor
+                </title>
+            </Helmet>
             <div className="card card-compact w-96 bg-base-100 shadow-xl">
                 <figure><img src={ins1} /></figure>
                 <div className="card-body">
