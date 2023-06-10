@@ -24,7 +24,7 @@ const Navbar = () => {
     {
       user?.email ? <>
        
-    <li><Link to="">My Toys</Link></li>
+    <li><Link to="/dashboard"> Dashboard</Link></li>
     
        <li><button onClick={handleLogOut}>LogOut</button></li>
       </> 
@@ -56,7 +56,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        {user &&
+        {user && 
           <FaUserCircle className='me-2' style={{ fontSize: '2rem' }}></FaUserCircle>
         }
        

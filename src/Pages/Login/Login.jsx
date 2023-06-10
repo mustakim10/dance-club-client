@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import login from '../../../public/xtra/login.jpg'
 import { AuthContext } from '../../providers/AuthProvider';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import Swal from 'sweetalert2'
 
@@ -9,6 +9,10 @@ import Swal from 'sweetalert2'
 
 const Login = () => {
     const {signIn} = useContext(AuthContext);
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const from = location.state?.from?.pathname || "/" ;
 
     const handleLogin = event => {
         event.preventDefault();
@@ -29,6 +33,7 @@ const Login = () => {
                   popup: 'animate__animated animate__fadeOutUp'
                 }
               })
+              navigate(from, {replace: true});
         })
     }
 
