@@ -13,7 +13,7 @@ const SingleClass = ({ cls }) => {
         console.log(cls);
         if (user && user.email) {
    const selected = {classId: _id, name,instructor, image, price , email: user.email}
-            fetch('http://localhost:5000/selectedClasses', {
+            fetch('https://dance-club-server.vercel.app/selectedClasses', {
                 method: 'POST',
                 headers: {
                     'content-type' : 'application/json'

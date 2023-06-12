@@ -10,9 +10,10 @@ import Classes from "../Pages/Classes/Classes";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/SignUp/SignUp";
 import DashBoard from "../Pages/DashBoard/DashBoard";
-import PrivateRoute from "./PrivateRoute";
 import MyClasses from "../Pages/Stu_Dashboard/MyClasses";
 import AllUsers from "../Pages/AdminDashboard/AllUsers";
+import AddClass from "../Ins_Dashboard/AddClass";
+import Payment from "../Pages/Payment/Payment";
 
  export const router = createBrowserRouter([
     {
@@ -54,6 +55,14 @@ import AllUsers from "../Pages/AdminDashboard/AllUsers";
         {
           path: 'allusers',
           element: <AllUsers></AllUsers>
+        },
+        {
+          path: 'addclass',
+          element: <AddClass></AddClass>
+        },
+        {
+          path: 'payment',
+          element: <Payment></Payment>
         }
       ]
     }

@@ -1,6 +1,7 @@
 import { FaTrashAlt } from "react-icons/fa";
 import useSelectedClass from "../../Hooks/useSelectedClass";
 import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 
 const MyClasses = () => {
     const [selected, refetch] = useSelectedClass();
@@ -18,7 +19,7 @@ const MyClasses = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/selectedClasses/${item._id}`, {
+                fetch(`https://dance-club-server.vercel.app/selectedClasses/${item._id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
@@ -42,7 +43,7 @@ const MyClasses = () => {
             <div className="uppercase font-semibold h-[60px] flex justify-center items-center gap-20">
                 <h2 className="text-3xl">Total-sel. classes : {selected.length}</h2>
                 <h2 className="text-3xl">Total Cost : {total}</h2>
-                <button className="btn btn-warning btn-sm">PAY</button>
+              <Link to="/dashboard/payment"><button className="btn btn-warning btn-sm">PAY</button></Link>
             </div>
             <div className="overflow-x-auto">
                 <table className="table">
