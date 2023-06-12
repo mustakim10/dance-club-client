@@ -1,5 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
-import { FaPeopleArrows, FaBeer,FaPaypal } from 'react-icons/fa';
+import { FaPeopleArrows, FaBeer,FaPaypal, FaHome } from 'react-icons/fa';
 
 const DashBoard = () => {
     
@@ -21,6 +21,11 @@ const DashBoard = () => {
       <li><Link to="/dashboard/myclasses"><FaPeopleArrows></FaPeopleArrows> My Classes</Link></li>
       <li><Link><FaBeer></FaBeer>Enrolled Classes</Link></li>
       <li><Link><FaPaypal></FaPaypal>Payment History</Link></li>
+
+      <div className="divider"></div>
+
+      <li><Link to="/"><FaHome></FaHome> Home</Link></li>
+
     </ul>
   
   </div>
