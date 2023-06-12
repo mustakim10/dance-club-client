@@ -12,6 +12,7 @@ import SignUp from "../Pages/SignUp/SignUp";
 import DashBoard from "../Pages/DashBoard/DashBoard";
 import PrivateRoute from "./PrivateRoute";
 import MyClasses from "../Pages/Stu_Dashboard/MyClasses";
+import AllUsers from "../Pages/AdminDashboard/AllUsers";
 
  export const router = createBrowserRouter([
     {
@@ -49,6 +50,10 @@ import MyClasses from "../Pages/Stu_Dashboard/MyClasses";
         {
           path: 'myclasses',
           element: <MyClasses></MyClasses>
+        },
+        {
+          path: 'allusers',
+          element: <AllUsers></AllUsers>
         }
       ]
     }
