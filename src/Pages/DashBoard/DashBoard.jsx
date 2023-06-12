@@ -1,5 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
-import { FaPeopleArrows, FaBeer, FaPaypal, FaHome } from 'react-icons/fa';
+import { FaPeopleArrows, FaBeer, FaPaypal, FaHome, FaAddressBook } from 'react-icons/fa';
 import useAdmin from "../../Hooks/useAdmin";
 
 const DashBoard = () => {
@@ -27,6 +27,7 @@ const DashBoard = () => {
               <h2 className="text-2xl font-bold my-8">Admin Dashboard</h2>
               <li><Link to="/dashboard/allusers"><FaPeopleArrows></FaPeopleArrows>Manage Users</Link></li>
               <li><Link><FaBeer></FaBeer>Manage Classes</Link></li>
+              <li><Link to="/dashboard/addclass"><FaAddressBook></FaAddressBook>Add Class</Link></li>
               
             </>
               :

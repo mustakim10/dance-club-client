@@ -14,6 +14,7 @@ import MyClasses from "../Pages/Stu_Dashboard/MyClasses";
 import AllUsers from "../Pages/AdminDashboard/AllUsers";
 import AddClass from "../Ins_Dashboard/AddClass";
 import Payment from "../Pages/Payment/Payment";
+import AdminRoute from "./AdminRoute";
 
  export const router = createBrowserRouter([
     {
@@ -58,7 +59,7 @@ import Payment from "../Pages/Payment/Payment";
         },
         {
           path: 'addclass',
-          element: <AddClass></AddClass>
+          element: <AdminRoute><AddClass></AddClass></AdminRoute>
         },
         {
           path: 'payment',
