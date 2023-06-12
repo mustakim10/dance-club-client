@@ -1,10 +1,12 @@
 import { Link, Outlet } from "react-router-dom";
 import { FaPeopleArrows, FaBeer, FaPaypal, FaHome } from 'react-icons/fa';
+import useAdmin from "../../Hooks/useAdmin";
 
 const DashBoard = () => {
 
   // TODO
-  const isAdmin = true;
+  // const isAdmin = true;
+ const [isAdmin] = useAdmin();
 
   return (
 
